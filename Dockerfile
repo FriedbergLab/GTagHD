@@ -1,6 +1,6 @@
 FROM openanalytics/r-base
 
-MAINTAINER Carla Mann "genesculptsuitehelp@gmail.com"
+MAINTAINER FriedbergLab "genesculptsuitehelp@gmail.com"
 
 # system libraries of general use
 RUN apt-get update && apt-get install -y \
@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     libxt-dev \
     libssl-dev \
     libssh2-1-dev \
-    libssl1.0.0 \
+    #libssl1.0.0 \
     libxml2-dev
 
 # install package dependencies for GTagHD
