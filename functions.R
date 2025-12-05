@@ -245,8 +245,10 @@ get3Prime <- function(dnaSeq, crisprSeq, passSeq, mh, cutSite, toolSeries){
   } else {
     #threePrimeF <- paste0("cgg", reverseComplement(threePrimeFBase))
     #threePrimeR <- paste0("aag", threePrimeFBase) 
-    threePrimeF <- paste0("aag", reverseComplement(threePrimeFBase))
-    threePrimeR <- paste0("cgg", threePrimeFBase) 
+    #threePrimeF <- paste0("aag", reverseComplement(threePrimeFBase))
+    #threePrimeR <- paste0("cgg", threePrimeFBase) 
+    threePrimeF <- paste0("aag", threePrimeFBase)  #July 2021 fix
+    threePrimeR <- paste0("cgg", reverseComplement(threePrimeFBase)) #July 2021 fix
     
   }
     
@@ -661,4 +663,3 @@ getBasePlasmid <- function(plasType){
          "www/plasmids/pGTag-TagRFP-caax-SV40_(071618).ape",
          "www/plasmids/pGTag-TagRFP-SV40_(071618).ape")
 }
-
